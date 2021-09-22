@@ -16,8 +16,9 @@ body {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 1px;
+    color: black;
 }
 
 button {
@@ -30,12 +31,12 @@ button {
 h2 {
     font-family: 'lato', sans-serif;
     font-weight: 300;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration: none;
 }
 
 /* NAVIGATION */
 .nav {
+
    position: relative;
 
 }
@@ -44,19 +45,22 @@ h2 {
 
     position: fixed;
     top: 0;
-    left: 0%;
-    padding: 0em;
+    margin: .5em .25em;
+    padding-right: .55em;
+    border-radius: .3333em;
 
     list-style: none;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    background-color: #2d34363f;
+    
     
 }
 
 .nav-list li {
-
-    padding: .33em;
+    
+    padding: .3em;
     
 }
 
@@ -366,7 +370,7 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 }
 
 .resume-title {
-    padding-top: 5vh;
+    padding-top: 20vh;
     text-align: center;
     text-decoration: underline;
     text-decoration-thickness: 1px;

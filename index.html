@@ -30,11 +30,10 @@
   https://stackoverflow.com/questions/15798360/show-div-on-scrolldown-after-800px
   <nav class="nav"> 
     <ul class= "nav-list">
-      <button id="myButton"> <img class="nav-icon" src="img/navIcon.png" alt="navbar"> </button>
       <div id="elems">
-      <li>about</li>
-      <li>design</li>
-      <li>resume</li>
+      <a href="#aboutId"><li>about</li></a>
+      <a href="#designId"><li>design</li></a>
+      <a href="resume.pdf"><li>resume</li></a>
       </div>
     </ul>
   
@@ -46,9 +45,11 @@
 
   </section>
 
-  <section class="about">
+  <section id="aboutId" class="about">
     
     <h2 class="about-title"> about </h2>
+
+    <a href="resume.pdf"> <h2 class="resume-title"> resume </h2> </a>
 
     <div class="about-copy">
 
@@ -93,7 +94,7 @@
 
   </section>
 
-  <section class="design">
+  <section id="designId" class="design">
 
     <div class="design-cases">
 
@@ -176,11 +177,7 @@
     </div>
 
   </section>
-  <section class="resume">
-
-   <a href="resume.pdf"> <h2 class="resume-title"> resume </h2> </a>
-
-  </section>
+  
   <script src="js/script.js" ></script>
 </body>
  
