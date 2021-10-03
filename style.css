@@ -100,7 +100,7 @@ h2 {
     padding-top: 250px;
 
     text-align: center;
-    font-size: 5em; /* needs responsivity */
+    font-size: 15vw; /* needs responsivity */
     
 }
 
@@ -382,7 +382,7 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 
 
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) {
 
 .nav-list li{
     display: inline-block;
@@ -498,7 +498,7 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 
 
 
-@media only screen and (max-width: 850px) and (orientation: landscape) {
+@media only screen and (max-width: 850px) {
 
     .frame-grid {
         margin-bottom: 75vh;
