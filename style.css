@@ -100,7 +100,7 @@ h2 {
     padding-top: 250px;
 
     text-align: center;
-    font-size: 15vw; /* needs responsivity */
+    font-size: 10vw; /* needs responsivity */
     
 }
 
@@ -176,14 +176,14 @@ h2 {
     height: 385vh;
     margin: 25vh auto;
 
+
     font-family: 'Lato', sans-serif;
     font-size: 1.5em;
     text-align: justify;
     line-height: 200%;
 
-
     justify-content: center;
-    grid-template-rows: repeat(9, .25fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-columns: repeat(3, .3fr);
     grid-column-gap: 8%;
     grid-row-gap: 3%;
@@ -266,16 +266,18 @@ grid-column: 2/3;
 
 .i-frame {
     
-    display: block;
-    width: 75vw;
+    grid-row: 8/9;
+    grid-column: 1/4;
+    margin: 0 auto;
+    width: 100%;
     height: 75vh;
-    margin: 5vh auto 5vh auto;
+
     
 
 }
 
 .scholar {
-    margin-top: 27vh;
+    margin-top: 100vh;
 }
 
 .scholar-title {
@@ -307,7 +309,7 @@ grid-column: 2/3;
     display: block;
     margin: 5% auto;
     width: 75vw;
-    height: 100vh;
+    height: 75vh;
  
 }
 
@@ -368,7 +370,7 @@ grid-column: 2/3;
     height: 10vh;
     width: auto;
     background: rgb(235,246,255);
-background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100%);
+    background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100%);
 }
 
 .resume-title {
@@ -380,6 +382,7 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 }
 
 
+/*RESPONSIVE*/
 
 
 @media only screen and (max-width: 1024px) {
@@ -393,7 +396,9 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 
 .frame-grid {
     margin-bottom: 50vh;
+    grid-template-rows: repeat(10, 1fr);
 }
+
 
 
 .item2 {
@@ -441,6 +446,14 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
     grid-row: 8/9;
     grid-column: 1/4;
     
+}
+
+.i-frame {
+    grid-row: 9/10;
+}
+
+.scholar {
+    margin-top: 150vh;
 }
 
 .scholar-grid {
@@ -492,26 +505,12 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
 }
 
 
-
-
-/*RESPONSIVE*/
-
-
-
 @media only screen and (max-width: 850px) {
 
-    .frame-grid {
-        margin-bottom: 75vh;
-    }
-    
-
-}
-
-@media only screen and (max-width: 700px) and (orientation: landscape) {
 
     .frame-grid {
         margin-bottom: 100vh;
-        grid-template-rows: repeat(11, 1fr);
+        grid-template-rows: repeat(12, 1fr);
     }
 
     .item5 {
@@ -539,34 +538,27 @@ background: linear-gradient(180deg, rgb(235,246,255) 0%, rgba(255,219,112,1) 100
         grid-column: 1/4;
     }
 
-    .i-frame {
-        margin-top: 300vh;
+    .i-frame{
+        grid-row: 11/12;
     }
     
     .scholar {
-        margin-top: 25vh;
+        margin-top: 400vh;
     }
 
 }
 
-@media only screen and (max-width: 570px) and (orientation: landscape) {
+@media only screen and (max-width: 570px) {
 
     .frame-grid {
         margin-bottom: 200vh;
     }
 
-    .i-frame{
-        margin-top: 350vh;
-    }
-}
-
-@media only screen and (max-width: 500px) and (orientation: landscape) {
-
-    .frame-grid {
-        margin-bottom: 200vh;
+    .name {
+        font-size: 12vw; 
     }
 
-   
-    
-
+    .scholar{
+        margin-top: 425vh;
+    }
 }
