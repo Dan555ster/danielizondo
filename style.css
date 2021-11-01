@@ -100,7 +100,7 @@ h2 {
     padding-top: 250px;
 
     text-align: center;
-    font-size: 10vw; /* needs responsivity */
+    font-size: 7vw; 
     
 }
 
@@ -507,6 +507,9 @@ grid-column: 2/3;
 
 @media only screen and (max-width: 850px) {
 
+    .name {
+        font-size: 10vw;
+    }
 
     .frame-grid {
         margin-bottom: 100vh;
@@ -559,6 +562,8 @@ grid-column: 2/3;
     }
 
     .scholar{
-        margin-top: 425vh;
+        margin-top: 450vh;
     }
+
+    
 }
